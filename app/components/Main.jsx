@@ -1,6 +1,7 @@
 "use strict";
 
-const React = require('react');
+const React = require('react'),
+  {Link} = require('react-router');
 
 class Main extends React.Component {
   constructor(props) {
@@ -11,7 +12,23 @@ class Main extends React.Component {
     return (
       <div className='app'>
         <header className="primary-header"></header>
-        <aside className="primary-aside"></aside>
+        <aside className="primary-aside">
+          <nav>
+            <ul>
+              <li><Link
+                    to='/'
+                    activeClassName="active">
+                    Home
+                </Link></li>
+              <li><Link
+                    to='/users'
+                    activeClassName='active'>
+                    Users
+                </Link></li>
+              <li><Link></Link></li>
+            </ul>
+          </nav>
+        </aside>
         <main>
           {this.props.children}
         </main>

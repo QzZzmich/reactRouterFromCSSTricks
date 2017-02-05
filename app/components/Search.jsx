@@ -10,12 +10,14 @@ class Search extends React.Component {
   render() {
     return(
       <div className='search'>
-        <header className='search-header'></header>
+        <header className='search-header'>
+          [Search Title]
+        </header>
         <div className='results'>
           {this.props.children}
         </div>
         <div className='search-footer pagination'>
-          
+          [Total Results]
         </div>
       </div>
     );

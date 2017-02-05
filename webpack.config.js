@@ -15,7 +15,10 @@ module.exports = {
       TEst: path.resolve(__dirname, './app/components/TEst.jsx'),
       Main: path.resolve(__dirname, './app/components/Main.jsx'),
       Search: path.resolve(__dirname, './app/components/Search.jsx'),
-      UserList: path.resolve(__dirname, './app/components/UserList.jsx')
+      UserList: path.resolve(__dirname, './app/components/UserList.jsx'),
+      Router: path.resolve(__dirname, './app/Router.jsx'),
+      Home: path.resolve(__dirname, './app/components/Home.jsx'),
+      UserProfile: path.resolve(__dirname, './app/components/UserProfile.jsx')
     }
   },
 

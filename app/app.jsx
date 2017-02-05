@@ -2,11 +2,10 @@
 
 const React = require('react'),
   ReactDOM = require('react-dom'),
-  TEst = require('TEst');
+  TEst = require('TEst'),
+  Router = require('Router');
 
 ReactDOM.render(
-  <TEst>
-    Hello JSX
-  </TEst>,
+  Router,
   document.getElementById('root')
 );
