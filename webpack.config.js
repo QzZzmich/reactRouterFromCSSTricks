@@ -18,7 +18,8 @@ module.exports = {
       UserList: path.resolve(__dirname, './app/components/UserList.jsx'),
       Router: path.resolve(__dirname, './app/Router.jsx'),
       Home: path.resolve(__dirname, './app/components/Home.jsx'),
-      UserProfile: path.resolve(__dirname, './app/components/UserProfile.jsx')
+      UserProfile: path.resolve(__dirname, './app/components/UserProfile.jsx'),
+      Widgets: path.resolve(__dirname, './app/components/Widgets.jsx')
     }
   },
 

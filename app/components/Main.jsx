@@ -19,13 +19,19 @@ class Main extends React.Component {
                     to='/'
                     activeClassName="active">
                     Home
-                </Link></li>
+                </Link>
+              </li>
               <li><Link
                     to='/users'
                     activeClassName='active'>
                     Users
-                </Link></li>
-              <li><Link></Link></li>
+                </Link>
+              </li>
+              <li><Link
+                to='/widgets'>
+                Widgets
+                </Link>
+              </li>
             </ul>
           </nav>
         </aside>
