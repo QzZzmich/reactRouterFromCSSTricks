@@ -6,7 +6,8 @@ const {Router, Route, browserHistory, IndexRoute} = require('react-router'),
   Home = require('Home'),
   UserProfile = require('UserProfile'),
   Widgets = require('Widgets'),
-  UserList = require('UserList');
+  UserList = require('UserList'),
+  UserListContainer = require('UserListContainer');
 
 module.exports = (
   <Router history={browserHistory}>
@@ -18,7 +19,7 @@ module.exports = (
       <Route path='users'>
         <Route
           component={Search}>
-          <IndexRoute component={UserList} />
+          <IndexRoute component={UserListContainer} />
         </Route>
         <Route
           path=':userId'

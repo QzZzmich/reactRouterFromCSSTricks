@@ -12,20 +12,14 @@ class UserList extends React.Component {
     return(
       <ul className='user-list'>
 
-        <li><Link
-          to='users/2'>Michael</Link></li>
-
-
-        <li><Link
-          to='users/1'>Ryan</Link></li>
-
-
-        <li><Link
-          to='users/3'>Dan</Link></li>
-
-
-        <li>  <Link
-          to='users/4'>Matt</Link></li>
+        {this.props.users.map((user) => {
+          return (
+            <li key={user.id}>
+              <Link
+                to={`/users/${user.id}`}>{user.name}</Link>
+            </li>
+          );
+        })}
 
       </ul>
     );
